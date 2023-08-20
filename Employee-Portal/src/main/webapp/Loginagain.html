@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Failed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: transparant;
+      }
+      @media ( width >= 500px) {
+	body {
+		padding: 0;
+	}
+}
+
+.background {
+	position: fixed;
+	top: -50vmin;
+	left: -50vmin;
+	width: 90vmin;
+	height: 90vmin;
+	border-radius: 47% 53% 61% 39%/45% 51% 49% 55%;
+	background: #65c8ff;
+}
+
+.background::after {
+	content: "";
+	position: inherit;
+	right: -50vmin;
+	bottom: -55vmin;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background: #2b82c9;
+}
+      
+      .container {
+        max-width: 800px;
+        margin: 170px auto;
+        padding: 40px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: #777;
+      }
+      button {
+        padding: 12px 24px;
+        border-radius: 6px;
+        border: none;
+        background-color: #2b82c9;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+ <body>
+ <div class="background"></div>
+	<div class="card">
+    <div class="container">
+      <h1>Oops! You entered invalid credentials.</h1>
+      <p>Please check your login details and try again.</p>
+      <form action="./Loginagain_Servlet" method="post">
+        <button type="submit">Go back to login page</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

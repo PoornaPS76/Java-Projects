@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+}
+
+@media ( width >= 500px) {
+	body {
+		padding: 0;
+	}
+}
+
+.background {
+	position: fixed;
+	top: -50vmin;
+	left: -50vmin;
+	width: 90vmin;
+	height: 90vmin;
+	border-radius: 47% 53% 61% 39%/45% 51% 49% 55%;
+	background: #65c8ff;
+}
+
+.background::after {
+	content: "";
+	position: inherit;
+	right: -50vmin;
+	bottom: -55vmin;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background: #2b82c9;
+}
+
+.container {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	max-width: 800px;
+	width: 40%;
+	margin: 150px auto;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 25px;
+	color: #333;
+}
+
+button {
+	background-color: #2b82c9;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin: 10px;
+	font-size: 16px;
+	display: block;
+	width: 96%;
+}
+
+button:hover {
+	background-color: #555;
+}
+</style>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="card">
+		<div class="container">
+			<h1>Employee Information</h1>
+			<div>
+				<button onclick="location.href='Ramu.html'">1. Ramu Avudurthi</button>
+				<button onclick="location.href='Sai.html'">2. Kedari Sai Kumar</button>
+				<button onclick="location.href='Suresh.html'">3. Kasi Suresh</button>
+				<button onclick="location.href='Satish.html'">4. Ketala Satish</button>
+				<button onclick="location.href='Neeraj.html'">5. Sai Neeraj</button>
+				<button onclick="location.href='Rishin.html'">6. Anaparthi Rishin Raju</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

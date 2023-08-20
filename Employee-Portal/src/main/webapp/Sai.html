@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sai Kumar</title>
+<style>
+body {
+	background-color: transparant;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+@media ( width >= 500px) {
+	body {
+		padding: 0;
+	}
+}
+
+.background {
+	position: fixed;
+	top: -50vmin;
+	left: -50vmin;
+	width: 90vmin;
+	height: 90vmin;
+	border-radius: 47% 53% 61% 39%/45% 51% 49% 55%;
+	background: #65c8ff;
+}
+
+.background::after {
+	content: "";
+	position: inherit;
+	right: -50vmin;
+	bottom: -55vmin;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background: #2b82c9;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+}
+
+h1, h2 {
+	color: #2C3E50;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 600px;
+	margin-top: 30px;
+	border: 1px solid #CCCCCC;
+}
+
+table td, table th {
+	padding: 12px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #CCCCCC;
+}
+
+table th {
+	background-color: #E0E0E0;
+	color: #2C3E50;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.employee-image {
+	display: block;
+	margin: 30px auto 0;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	border: 5px solid #FFFFFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+	background-color: #2b82c9;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin: 10px;
+	font-size: 16px;
+	display: block;
+	width: 96%;
+}
+
+button:hover {
+	background-color: #555;
+}
+</style>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="card">
+		<div class="container">
+			<h1>Employee Information</h1>
+			<img
+				src="https://i.pinimg.com/564x/83/22/9c/83229c9c885f1ee4facb9caa4b6eab84.jpg"
+				alt="Sai Kumar" class="employee-image"> <br>
+			<h2>Sai Kumar</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<td>Kedari Sai Kumar</td>
+				</tr>
+				<tr>
+					<th>Phone Number</th>
+					<td>9182534835</td>
+				</tr>
+				<tr>
+					<th>Email Address</th>
+					<td>kedharisai14@gmail.com</td>
+				</tr>
+				<tr>
+					<th>Hometown</th>
+					<td>Warangal, India</td>
+				</tr>
+				<tr>
+					<th>College Name</th>
+					<td>Vidhya Jyothi Institute of Technlogy</td>
+				</tr>
+			</table>
+			<form action="./LogoutServlet" method="post">
+			<br>
+		<button type="submit">Sign Out</button>
+	</form>
+		</div>
+	</div>
+</body>
+</html>

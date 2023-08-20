@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PS76 Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://i.pinimg.com/originals/43/1a/28/431a283e66c114927de4dc3440d3425a.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .content{
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 7%;
+        transform: translateY(-40%);
+        z-index: 2;
+      }
+      
+      h1 {
+        font-size: 100px;
+        margin:10px 0 30px;
+        line-height: 80px;
+        color: #fff;
+        position: relative; /* Add relative positioning */
+      }
+      h2{
+        font-size: 35px;
+        margin: 10px 0 30px;
+        
+      }
+      .login-button {
+        color: #fbfcfb;
+        padding: 7px 25px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 120%; /* Change positioning to be relative to h1 */
+        left: 13%; /* Position in the center */
+        transform: translate(-50%, -50%);
+      }
+      login-button:hover{
+        background-color: rgb(186, 174, 159);
+      }
+      
+      .signup-button {
+        color: #fbfcfb;
+        padding: 7px 22px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 120%; /* Change positioning to be relative to h1 */
+        left: 30%; /* Position in the center */
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Welcome to</h2>
+      <h1>P@cket Prep</h1>
+        <form action="./WelcomeServlet" method="post">
+          <button class="login-button" type="submit">Login</button>
+        </form>
+        <form action="./SignupServlet" method="post">
+          <button class="signup-button" type="submit">Sign Up</button>
+        </form>
+    </div>
+  </body>
+</html>
